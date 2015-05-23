@@ -59,6 +59,9 @@ class IntroViewController: UIViewController {
             }))
             
             self.presentViewController(alert, animated: true, completion: nil)
+            
+            // replay video after alert
+            self.playVideo();
         }
         
         
