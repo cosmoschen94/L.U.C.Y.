@@ -34,6 +34,23 @@ class IntroViewController: UIViewController {
     }
    
     @IBAction func login(){
+        
+        if loginUsernameText.text == "" || loginPasswordText.text == "" {
+            
+            var alert = UIAlertController(title: "Error", message: "Please enter a phone# or a password", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:
+                
+                {(action) -> Void in
+                    
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                    
+            }))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        
+        
         moviePlayer!.stop();
         let mainVC = MainViewController(nibName:"MainViewController", bundle:nil)
         self.presentViewController(mainVC, animated: true, completion: nil);
