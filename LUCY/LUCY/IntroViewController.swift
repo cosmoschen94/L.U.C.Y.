@@ -12,6 +12,11 @@ import AVFoundation
 class IntroViewController: UIViewController {
 
     @IBOutlet weak var labelXIB : UILabel!
+    
+    @IBOutlet weak var loginUsernameText: UITextField!
+    
+    @IBOutlet weak var loginPasswordText: UITextField!
+    
     var moviePlayer: MPMoviePlayerController?
     
     override func viewDidLoad() {
