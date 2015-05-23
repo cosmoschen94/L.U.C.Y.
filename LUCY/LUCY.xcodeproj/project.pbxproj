@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84CB48991B100550000B8088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB48981B100550000B8088 /* main.m */; };
+		84CB489C1B100550000B8088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB489B1B100550000B8088 /* AppDelegate.m */; };
+		84CB489F1B100550000B8088 /* LUCY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84CB489D1B100550000B8088 /* LUCY.xcdatamodeld */; };
+		84CB48A71B100550000B8088 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CB48A61B100550000B8088 /* Images.xcassets */; };
+		84CB48B61B100550000B8088 /* LUCYTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB48B51B100550000B8088 /* LUCYTests.m */; };
+		84CB48C21B1005A5000B8088 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB48C01B1005A5000B8088 /* IntroViewController.swift */; };
+		84CB48C31B1005A5000B8088 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CB48C11B1005A5000B8088 /* IntroViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84CB48B01B100550000B8088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CB488B1B100550000B8088 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CB48921B100550000B8088;
+			remoteInfo = LUCY;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84CB48931B100550000B8088 /* LUCY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUCY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CB48971B100550000B8088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CB48981B100550000B8088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84CB489A1B100550000B8088 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84CB489B1B100550000B8088 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84CB489E1B100550000B8088 /* LUCY.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LUCY.xcdatamodel; sourceTree = "<group>"; };
+		84CB48A61B100550000B8088 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84CB48AF1B100550000B8088 /* LUCYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LUCYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CB48B41B100550000B8088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CB48B51B100550000B8088 /* LUCYTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUCYTests.m; sourceTree = "<group>"; };
+		84CB48BF1B1005A4000B8088 /* LUCY-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LUCY-Bridging-Header.h"; sourceTree = "<group>"; };
+		84CB48C01B1005A5000B8088 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		84CB48C11B1005A5000B8088 /* IntroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CB48901B100550000B8088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CB48AC1B100550000B8088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84CB488A1B100550000B8088 = {
+			isa = PBXGroup;
+			children = (
+				84CB48951B100550000B8088 /* LUCY */,
+				84CB48B21B100550000B8088 /* LUCYTests */,
+				84CB48941B100550000B8088 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84CB48941B100550000B8088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84CB48931B100550000B8088 /* LUCY.app */,
+				84CB48AF1B100550000B8088 /* LUCYTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CB48951B100550000B8088 /* LUCY */ = {
+			isa = PBXGroup;
+			children = (
+				84CB48C51B1005B5000B8088 /* Models */,
+				84CB48C41B1005B1000B8088 /* APIs */,
+				84CB48BF1B1005A4000B8088 /* LUCY-Bridging-Header.h */,
+				84CB489A1B100550000B8088 /* AppDelegate.h */,
+				84CB489B1B100550000B8088 /* AppDelegate.m */,
+				84CB48A61B100550000B8088 /* Images.xcassets */,
+				84CB489D1B100550000B8088 /* LUCY.xcdatamodeld */,
+				84CB48961B100550000B8088 /* Supporting Files */,
+				84CB48C01B1005A5000B8088 /* IntroViewController.swift */,
+				84CB48C11B1005A5000B8088 /* IntroViewController.xib */,
+			);
+			path = LUCY;
+			sourceTree = "<group>";
+		};
+		84CB48961B100550000B8088 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84CB48971B100550000B8088 /* Info.plist */,
+				84CB48981B100550000B8088 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84CB48B21B100550000B8088 /* LUCYTests */ = {
+			isa = PBXGroup;
+			children = (
+				84CB48B51B100550000B8088 /* LUCYTests.m */,
+				84CB48B31B100550000B8088 /* Supporting Files */,
+			);
+			path = LUCYTests;
+			sourceTree = "<group>";
+		};
+		84CB48B31B100550000B8088 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84CB48B41B100550000B8088 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84CB48C41B1005B1000B8088 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
+		84CB48C51B1005B5000B8088 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CB48921B100550000B8088 /* LUCY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CB48B91B100550000B8088 /* Build configuration list for PBXNativeTarget "LUCY" */;
+			buildPhases = (
+				84CB488F1B100550000B8088 /* Sources */,
+				84CB48901B100550000B8088 /* Frameworks */,
+				84CB48911B100550000B8088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LUCY;
+			productName = LUCY;
+			productReference = 84CB48931B100550000B8088 /* LUCY.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84CB48AE1B100550000B8088 /* LUCYTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CB48BC1B100550000B8088 /* Build configuration list for PBXNativeTarget "LUCYTests" */;
+			buildPhases = (
+				84CB48AB1B100550000B8088 /* Sources */,
+				84CB48AC1B100550000B8088 /* Frameworks */,
+				84CB48AD1B100550000B8088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CB48B11B100550000B8088 /* PBXTargetDependency */,
+			);
+			name = LUCYTests;
+			productName = LUCYTests;
+			productReference = 84CB48AF1B100550000B8088 /* LUCYTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84CB488B1B100550000B8088 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "William Gu";
+				TargetAttributes = {
+					84CB48921B100550000B8088 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					84CB48AE1B100550000B8088 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 84CB48921B100550000B8088;
+					};
+				};
+			};
+			buildConfigurationList = 84CB488E1B100550000B8088 /* Build configuration list for PBXProject "LUCY" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84CB488A1B100550000B8088;
+			productRefGroup = 84CB48941B100550000B8088 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84CB48921B100550000B8088 /* LUCY */,
+				84CB48AE1B100550000B8088 /* LUCYTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CB48911B100550000B8088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CB48A71B100550000B8088 /* Images.xcassets in Resources */,
+				84CB48C31B1005A5000B8088 /* IntroViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CB48AD1B100550000B8088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CB488F1B100550000B8088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CB489F1B100550000B8088 /* LUCY.xcdatamodeld in Sources */,
+				84CB489C1B100550000B8088 /* AppDelegate.m in Sources */,
+				84CB48991B100550000B8088 /* main.m in Sources */,
+				84CB48C21B1005A5000B8088 /* IntroViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CB48AB1B100550000B8088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CB48B61B100550000B8088 /* LUCYTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84CB48B11B100550000B8088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CB48921B100550000B8088 /* LUCY */;
+			targetProxy = 84CB48B01B100550000B8088 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84CB48B71B100550000B8088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84CB48B81B100550000B8088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84CB48BA1B100550000B8088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = LUCY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LUCY/LUCY-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84CB48BB1B100550000B8088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = LUCY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LUCY/LUCY-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		84CB48BD1B100550000B8088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LUCYTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LUCY.app/LUCY";
+			};
+			name = Debug;
+		};
+		84CB48BE1B100550000B8088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LUCYTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LUCY.app/LUCY";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CB488E1B100550000B8088 /* Build configuration list for PBXProject "LUCY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CB48B71B100550000B8088 /* Debug */,
+				84CB48B81B100550000B8088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CB48B91B100550000B8088 /* Build configuration list for PBXNativeTarget "LUCY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CB48BA1B100550000B8088 /* Debug */,
+				84CB48BB1B100550000B8088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84CB48BC1B100550000B8088 /* Build configuration list for PBXNativeTarget "LUCYTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CB48BD1B100550000B8088 /* Debug */,
+				84CB48BE1B100550000B8088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84CB489D1B100550000B8088 /* LUCY.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84CB489E1B100550000B8088 /* LUCY.xcdatamodel */,
+			);
+			currentVersion = 84CB489E1B100550000B8088 /* LUCY.xcdatamodel */;
+			path = LUCY.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84CB488B1B100550000B8088 /* Project object */;
+}
