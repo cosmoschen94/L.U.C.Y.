@@ -11,6 +11,8 @@
 		49E316221B10088800ABC71D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E316211B10088800ABC71D /* MediaPlayer.framework */; };
 		49E316251B100F2600ABC71D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E316241B100F2600ABC71D /* Default-568h@2x.png */; };
 		49E316271B101C4F00ABC71D /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49E316261B10157C00ABC71D /* test.mp4 */; };
+		49E3162A1B1027BB00ABC71D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E316281B1027BB00ABC71D /* MainViewController.swift */; };
+		49E3162B1B1027BB00ABC71D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E316291B1027BB00ABC71D /* MainViewController.xib */; };
 		84CB48991B100550000B8088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB48981B100550000B8088 /* main.m */; };
 		84CB489C1B100550000B8088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB489B1B100550000B8088 /* AppDelegate.m */; };
 		84CB489F1B100550000B8088 /* LUCY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84CB489D1B100550000B8088 /* LUCY.xcdatamodeld */; };
@@ -35,6 +37,8 @@
 		49E316211B10088800ABC71D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		49E316241B100F2600ABC71D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		49E316261B10157C00ABC71D /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		49E316281B1027BB00ABC71D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		49E316291B1027BB00ABC71D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		84CB48931B100550000B8088 /* LUCY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUCY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CB48971B100550000B8088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CB48981B100550000B8088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				84CB48961B100550000B8088 /* Supporting Files */,
 				84CB48C01B1005A5000B8088 /* IntroViewController.swift */,
 				84CB48C11B1005A5000B8088 /* IntroViewController.xib */,
+				49E316281B1027BB00ABC71D /* MainViewController.swift */,
+				49E316291B1027BB00ABC71D /* MainViewController.xib */,
 			);
 			path = LUCY;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			files = (
 				49E316271B101C4F00ABC71D /* test.mp4 in Resources */,
 				84CB48A71B100550000B8088 /* Images.xcassets in Resources */,
+				49E3162B1B1027BB00ABC71D /* MainViewController.xib in Resources */,
 				84CB48C31B1005A5000B8088 /* IntroViewController.xib in Resources */,
 				49E316251B100F2600ABC71D /* Default-568h@2x.png in Resources */,
 			);
@@ -262,6 +269,7 @@
 				84CB489C1B100550000B8088 /* AppDelegate.m in Sources */,
 				84CB48991B100550000B8088 /* main.m in Sources */,
 				84CB48C21B1005A5000B8088 /* IntroViewController.swift in Sources */,
+				49E3162A1B1027BB00ABC71D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

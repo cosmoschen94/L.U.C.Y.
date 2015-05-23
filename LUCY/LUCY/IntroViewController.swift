@@ -28,7 +28,12 @@ class IntroViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
    
-    
+    @IBAction func login(){
+        moviePlayer!.stop();
+        let mainVC = MainViewController(nibName:"MainViewController", bundle:nil)
+        self.presentViewController(mainVC, animated: true, completion: nil);
+        
+    }
     func playVideo() ->Bool {
         
         //take path of video
