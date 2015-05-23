@@ -8,28 +8,34 @@
 
 import UIKit
 import MediaPlayer
+import AVFoundation
 class IntroViewController: UIViewController {
 
+    @IBOutlet weak var labelXIB : UILabel!
     var moviePlayer: MPMoviePlayerController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.playVideo();
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(animated: Bool) {
+        self.playVideo();
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+   
     
     func playVideo() ->Bool {
         
         //take path of video
-        let pathURL = NSURL(fileURLWithPath: "background.mp4");
-                
-        moviePlayer = MPMoviePlayerController(contentURL: pathURL)
+        let pathURL = NSBundle.mainBundle().pathForResource("test", ofType: "mp4");
+        let url = NSURL.fileURLWithPath(pathURL!);
+
+        moviePlayer = MPMoviePlayerController(contentURL: url);
         //asigning video to moviePlayer
         
         if let player = moviePlayer {
@@ -44,14 +50,17 @@ class IntroViewController: UIViewController {
             //Playing the video
             
             
-            player.repeatMode = .One
+            player.repeatMode = MPMovieRepeatMode.One
             //Repeating the video
             
-            player.scalingMode = .AspectFill
+            player.scalingMode = MPMovieScalingMode.AspectFill
             //setting the aspect ratio of the player
-            
-            self.view.addSubview(player.view)
+            self.view.addSubview(player.view);
+            self.view.sendSubviewToBack(player.view);
+//            self.view.insertSubview(player.view, belowSubview: self.labelXIB)
             //adding the player view to viewcontroller
+            player.play()
+
             return true
             
         }
