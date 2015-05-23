@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LUCY-Swift.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // [Optional] Power your app with Local Datastore. For more info, go to
+    // https://parse.com/docs/ios_guide#localdatastore/iOS
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"nY8u9lPRSRmwVIL8YbyOv2tVd1DvJaqddssbRNHT"
+                  clientKey:@"PXhsXfE2hjZpy0q4DVr6r2JNFEsP6cCioonLCvGp"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     IntroViewController *introVC =  [[IntroViewController alloc] initWithNibName:@"IntroViewController" bundle:nil];
