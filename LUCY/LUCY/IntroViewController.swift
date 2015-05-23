@@ -19,6 +19,17 @@ class IntroViewController: UIViewController {
     
     var moviePlayer: MPMoviePlayerController?
     
+    let panRec = UIPanGestureRecognizer()
+    
+    func draggedView(sender:UIPanGestureRecognizer){
+        self.view.bringSubviewToFront(sender.view!)
+        var translation = sender.translationInView(self.view)
+        sender.view!.center = CGPointMake(sender.view!.center.x + translation.x,sender.view!.center.y)
+        // can only drag in x-direction
+        sender.setTranslation(CGPointZero, inView: self.view)
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -37,6 +48,7 @@ class IntroViewController: UIViewController {
         
         if loginUsernameText.text == "" || loginPasswordText.text == "" {
             
+            // generate alert if blank
             var alert = UIAlertController(title: "Error", message: "Please enter a phone# or a password", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:
                 
@@ -82,6 +94,13 @@ class IntroViewController: UIViewController {
             
             player.scalingMode = MPMovieScalingMode.AspectFill
             //setting the aspect ratio of the player
+            
+            // panswipe video
+            panRec.addTarget(self, action: "draggedView:")
+            player.view.addGestureRecognizer(panRec)
+            player.view.userInteractionEnabled = true
+            
+            
             self.view.addSubview(player.view);
             self.view.sendSubviewToBack(player.view);
 //            self.view.insertSubview(player.view, belowSubview: self.labelXIB)
