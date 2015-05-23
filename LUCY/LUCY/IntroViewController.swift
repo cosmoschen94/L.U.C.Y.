@@ -24,7 +24,6 @@ class IntroViewController: UIViewController {
     }
     
     
-    
     func playVideo() ->Bool {
         
         //take path of video
