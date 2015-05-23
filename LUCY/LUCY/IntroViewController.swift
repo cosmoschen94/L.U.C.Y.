@@ -23,7 +23,7 @@ class IntroViewController: UIViewController {
     let panRec = UIPanGestureRecognizer()
     
     func draggedView(sender:UIPanGestureRecognizer){
-        self.view.bringSubviewToFront(sender.view!)
+        //self.view.bringSubviewToFront(sender.view!)
         var translation = sender.translationInView(self.view)
         sender.view!.center = CGPointMake(sender.view!.center.x + translation.x,sender.view!.center.y)
         // can only drag in x-direction
