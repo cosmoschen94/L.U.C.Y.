@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49E316201B10088300ABC71D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E3161F1B10088300ABC71D /* AVFoundation.framework */; };
+		49E316221B10088800ABC71D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E316211B10088800ABC71D /* MediaPlayer.framework */; };
 		84CB48991B100550000B8088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB48981B100550000B8088 /* main.m */; };
 		84CB489C1B100550000B8088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB489B1B100550000B8088 /* AppDelegate.m */; };
 		84CB489F1B100550000B8088 /* LUCY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84CB489D1B100550000B8088 /* LUCY.xcdatamodeld */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49E3161F1B10088300ABC71D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		49E316211B10088800ABC71D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		84CB48931B100550000B8088 /* LUCY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUCY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CB48971B100550000B8088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CB48981B100550000B8088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E316221B10088800ABC71D /* MediaPlayer.framework in Frameworks */,
+				49E316201B10088300ABC71D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49E316231B10088B00ABC71D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49E316211B10088800ABC71D /* MediaPlayer.framework */,
+				49E3161F1B10088300ABC71D /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84CB488A1B100550000B8088 = {
 			isa = PBXGroup;
 			children = (
+				49E316231B10088B00ABC71D /* Frameworks */,
 				84CB48951B100550000B8088 /* LUCY */,
 				84CB48B21B100550000B8088 /* LUCYTests */,
 				84CB48941B100550000B8088 /* Products */,
@@ -416,6 +432,7 @@
 				84CB48BB1B100550000B8088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84CB48BC1B100550000B8088 /* Build configuration list for PBXNativeTarget "LUCYTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +441,7 @@
 				84CB48BE1B100550000B8088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
