@@ -10,7 +10,6 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    
     @IBOutlet weak var label: UILabel!
     
     let panRec = UIPanGestureRecognizer()

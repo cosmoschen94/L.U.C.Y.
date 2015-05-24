@@ -64,6 +64,10 @@ class IntroViewController: UIViewController {
             activityIndicator.startAnimating()
             UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         }
+        
+//        let signUpVC = SignUpViewController(nibName:"SignUpViewController", bundle:nil)
+//        self.presentViewController(signUpVC, animated: true, completion: nil);
+        
     }
     
     override func viewDidLoad() {
@@ -92,7 +96,7 @@ class IntroViewController: UIViewController {
         if loginUsernameText.text == "" || loginPasswordText.text == "" {
             
             // generate alert if blank
-            var alert = UIAlertController(title: "Error", message: "Please enter a phone# or a password", preferredStyle: UIAlertControllerStyle.Alert)
+            /*var alert = UIAlertController(title: "Error", message: "Please enter a phone# or a password", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:
                 
                 {(action) -> Void in
@@ -104,14 +108,16 @@ class IntroViewController: UIViewController {
             self.presentViewController(alert, animated: true, completion: nil)
             
             // replay video after alert
-            self.playVideo();
+            self.playVideo();*/
+            
+            displayAlert("Error in form", message: "Please enter a username and password")
         }
         
         
-        
-        moviePlayer!.stop();
         let mainVC = MainViewController(nibName:"MainViewController", bundle:nil)
         self.presentViewController(mainVC, animated: true, completion: nil);
+        
+        moviePlayer!.stop();
         
     }
     func playVideo() ->Bool {
