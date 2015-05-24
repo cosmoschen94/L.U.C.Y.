@@ -10,6 +10,9 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    
+    @IBOutlet weak var signInPhone: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
