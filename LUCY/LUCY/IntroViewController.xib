@@ -31,17 +31,11 @@
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hqz-kB-9pl">
                     <rect key="frame" x="53" y="18" width="214" height="153"/>
                 </imageView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" background="TextField" translatesAutoresizingMaskIntoConstraints="NO" id="qYU-Rz-LHk">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234567" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" background="TextField" translatesAutoresizingMaskIntoConstraints="NO" id="qYU-Rz-LHk">
                     <rect key="frame" x="86" y="279" width="180" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="LockIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5ni-0I-VEu">
-                    <rect key="frame" x="60" y="282" width="18" height="24"/>
-                </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="UsernameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="r7u-tX-bGu">
-                    <rect key="frame" x="58" y="245" width="23" height="22"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGD-Sc-p48">
                     <rect key="frame" x="61" y="440" width="206" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -53,7 +47,7 @@
                         <action selector="signUpButton:" destination="-1" eventType="touchUpInside" id="pwK-p0-VxR"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone#" minimumFontSize="17" background="UsernameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="FbH-5W-8lg">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3103932910" borderStyle="roundedRect" placeholder="Phone#" minimumFontSize="17" background="UsernameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="FbH-5W-8lg">
                     <rect key="frame" x="86" y="241" width="180" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -64,7 +58,6 @@
         </view>
     </objects>
     <resources>
-        <image name="LockIcon" width="18" height="24"/>
         <image name="Logo" width="438" height="288"/>
         <image name="SignInButton" width="212" height="40"/>
         <image name="SignUpButton" width="212" height="40"/>

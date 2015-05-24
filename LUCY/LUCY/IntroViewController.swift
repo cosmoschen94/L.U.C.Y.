@@ -65,8 +65,8 @@ class IntroViewController: UIViewController {
             UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         }
         
-//        let signUpVC = SignUpViewController(nibName:"SignUpViewController", bundle:nil)
-//        self.presentViewController(signUpVC, animated: true, completion: nil);
+        let startVC = StartViewController(nibName:"StartViewController", bundle:nil)
+        self.presentViewController(startVC, animated: true, completion: nil);
         
     }
     
