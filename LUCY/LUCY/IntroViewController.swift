@@ -18,6 +18,23 @@ class IntroViewController: UIViewController {
     
     @IBOutlet weak var loginPasswordText: UITextField!
     
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
+    // alert
+    func displayAlert(title: String, message: String) {
+        
+        var alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction((UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+            
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
+        })))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+        
+    }
+    
     var moviePlayer: MPMoviePlayerController?
     
     let panRec = UIPanGestureRecognizer()
@@ -30,6 +47,24 @@ class IntroViewController: UIViewController {
         sender.setTranslation(CGPointZero, inView: self.view)
     }
 
+    // signup
+    @IBAction func signUpButton(sender: AnyObject) {
+        
+        if loginUsernameText.text == "" || loginPasswordText.text == "" {
+            
+            displayAlert("Error in form", message: "Please enter a username and password")
+            
+        } else {
+            
+            activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
+            activityIndicator.center = self.view.center
+            activityIndicator.hidesWhenStopped = true
+            activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+            view.addSubview(activityIndicator)
+            activityIndicator.startAnimating()
+            UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
