@@ -10,10 +10,10 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
+   
+    var panRec = UIPanGestureRecognizer()
     
-    let panRec = UIPanGestureRecognizer()
-    
+    @IBOutlet weak var mian: UILabel!
     func draggedView(sender:UIPanGestureRecognizer){
         self.view.bringSubviewToFront(sender.view!)
         var translation = sender.translationInView(self.view)
@@ -26,11 +26,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         
-        panRec.addTarget(self, action: "draggedView:")
-        label.addGestureRecognizer(panRec)
-        label.userInteractionEnabled = true
+        // Do any additional setup after loading the view
+        //label.addGestureRecognizer(panRec)
+        //label.userInteractionEnabled = true
     }
 
     override func didReceiveMemoryWarning() {

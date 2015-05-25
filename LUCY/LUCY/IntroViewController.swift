@@ -114,8 +114,7 @@ class IntroViewController: UIViewController {
             displayAlert("Error in form", message: "Please enter a username and password")
         }
         
-        
-        let signInVC = MainViewController(nibName:"MainInViewController", bundle:nil)
+        let signInVC = SignInViewController(nibName: "SignInViewController", bundle: nil)
         self.presentViewController(signInVC, animated: true, completion: nil)
         
         moviePlayer!.stop()
