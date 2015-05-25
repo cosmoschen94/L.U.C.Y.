@@ -65,9 +65,10 @@ class IntroViewController: UIViewController {
             UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         }
         
-        let startVC = StartViewController(nibName:"StartViewController", bundle:nil)
-        self.presentViewController(startVC, animated: true, completion: nil);
+//        let startVC = SignUpViewController(nibName:"SignUpViewController", bundle:nil)
+//        self.presentViewController(startVC, animated: true, completion: nil);
         
+        moviePlayer!.stop();
     }
     
     override func viewDidLoad() {
@@ -114,10 +115,10 @@ class IntroViewController: UIViewController {
         }
         
         
-        let mainVC = MainViewController(nibName:"MainViewController", bundle:nil)
-        self.presentViewController(mainVC, animated: true, completion: nil);
+        let signInVC = MainViewController(nibName:"MainInViewController", bundle:nil)
+        self.presentViewController(signInVC, animated: true, completion: nil)
         
-        moviePlayer!.stop();
+        moviePlayer!.stop()
         
     }
     func playVideo() ->Bool {

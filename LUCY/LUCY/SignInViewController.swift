@@ -1,24 +1,38 @@
 //
-//  StartViewController.swift
+//  SignInViewController.swift
 //  LUCY
 //
-//  Created by Siyu Chen on 5/24/15.
+//  Created by Siyu Chen on 5/25/15.
 //  Copyright (c) 2015 William Gu. All rights reserved.
 //
 
 import UIKit
+import Parse
 
-class StartViewController: UIViewController {
+
+class SignInViewController: UIViewController {
+
+    @IBOutlet weak var logo: UIImageView!
+    
+    @IBAction func loginButton(sender: AnyObject) {
+    }
+    
+    @IBOutlet weak var loginUsername: UITextField!
+    
+    @IBOutlet weak var loginPassword: UITextField!
+    
+    
 
     
-    @IBOutlet weak var signInPhone: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
